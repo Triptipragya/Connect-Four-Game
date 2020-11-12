@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #d9f7f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="203.0" minWidth="195.0" prefWidth="195.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="25.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDicsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2b3b4c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneName" prefHeight="16.0" prefWidth="178.0" promptText="Player OneName">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="playerTwoName" prefHeight="14.0" prefWidth="178.0" promptText="Player Two Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="1.0" />
+               </VBox.margin></TextField>
+            <Button fx:id="setName" mnemonicParsing="false" prefHeight="29.0" prefWidth="203.0" text="Set Names">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="223.0" text="Player One" textFill="#f2eded">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="8.0" right="8.0" top="70.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="179.0" text="Turn" textFill="#ebe8e8">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+    </children>
+</GridPane>
