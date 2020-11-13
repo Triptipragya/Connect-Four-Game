@@ -1,4 +1,4 @@
-package com.internshala.connectfour;
+package com.pragya.connectfour;
 
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
