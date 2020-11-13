@@ -1,4 +1,4 @@
-package com.internshala.connectfour;
+package com.pragya.connectfour;
 
 import javafx.application.Application;
 import javafx.application.Platform;
